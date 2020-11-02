@@ -15,12 +15,18 @@ void Drive()
 
     // Set the speed of the left motor. If the value is less than the deadband,
     // set it to zero.
-    if (abs(leftMotorSpeed) < deadband)
+    if (abs(leftMotorSpeed) < deadband && abs(Controller1.Axis2.position()) < deadband)
     {
       // Set the speed to zero.
       Left_back.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
       Left_front.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
     } 
+    else if(abs(Controller1.Axis2.position()) > deadband)
+    {
+      Left_back.spin(vex::directionType::fwd, Controller1.Axis2.position(), vex::velocityUnits::pct);
+      Left_front.spin(vex::directionType::fwd, Controller1.Axis2.position(), vex::velocityUnits::pct);
+
+    }
     else 
     {
       // Set the speed to leftMotorSpeed
@@ -30,17 +36,24 @@ void Drive()
 
     // Set the speed of the right motor. If the value is less than the deadband,
     // set it to zero.
-    if (abs(rightMotorSpeed) < deadband) 
+    if (abs(rightMotorSpeed) < deadband && abs(Controller1.Axis2.position()) < deadband) 
     {
       // Set the speed to zero
       Right_back.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
       Right_front.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
     } 
+    else if(abs(Controller1.Axis2.position()) > deadband)
+    {
+      Right_back.spin(vex::directionType::fwd, Controller1.Axis2.position(), vex::velocityUnits::pct);
+      Right_front.spin(vex::directionType::fwd, Controller1.Axis2.position(), vex::velocityUnits::pct);
+
+    }
     else 
     {
       // Set the speed to rightMotorSpeed
       Right_back.spin(vex::directionType::fwd, rightMotorSpeed, vex::velocityUnits::pct);
       Right_front.spin(vex::directionType::fwd, rightMotorSpeed, vex::velocityUnits::pct);
     }
+
  
 }

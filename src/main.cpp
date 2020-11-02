@@ -7,6 +7,45 @@
 // Right_back           motor         3               
 // Right_front          motor         13              
 // Flywheel             motor         9               
+// Intake1              motor         14              
+// Intake2              motor         6               
+// indexer              motor         8               
+// ---- END VEXCODE CONFIGURED DEVICES ----
+// ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]               [Type]        [Port(s)]
+// Controller1          controller                    
+// Left_back            motor         11              
+// Left_front           motor         2               
+// Right_back           motor         3               
+// Right_front          motor         13              
+// Flywheel             motor         9               
+// Intake1              motor         14              
+// Intake2              motor         7               
+// indexer              motor         8               
+// ---- END VEXCODE CONFIGURED DEVICES ----
+// ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]               [Type]        [Port(s)]
+// Controller1          controller                    
+// Left_back            motor         11              
+// Left_front           motor         2               
+// Right_back           motor         3               
+// Right_front          motor         13              
+// Flywheel             motor         9               
+// Intake1              motor         14              
+// Intake2              motor         7               
+// indexer              motor         8               
+// ---- END VEXCODE CONFIGURED DEVICES ----
+// ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]               [Type]        [Port(s)]
+// Controller1          controller                    
+// Left_back            motor         11              
+// Left_front           motor         2               
+// Right_back           motor         3               
+// Right_front          motor         13              
+// Flywheel             motor         9               
 // Intake1              motor         6               
 // Intake2              motor         7               
 // indexer              motor         8               

@@ -14,8 +14,8 @@ motor Left_front = motor(PORT2, ratio18_1, false);
 motor Right_back = motor(PORT3, ratio18_1, true);
 motor Right_front = motor(PORT13, ratio18_1, true);
 motor Flywheel = motor(PORT9, ratio18_1, false);
-motor Intake1 = motor(PORT6, ratio18_1, false);
-motor Intake2 = motor(PORT7, ratio18_1, true);
+motor Intake1 = motor(PORT14, ratio18_1, false);
+motor Intake2 = motor(PORT6, ratio18_1, true);
 motor indexer = motor(PORT8, ratio18_1, false);
 
 // VEXcode generated functions
