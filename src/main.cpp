@@ -71,9 +71,13 @@ void pre_auton(void) {
 
 void autonomous(void)
  {// Insert autonomous user code here.
- driveInches(5, 0);
  
-
+  Intake1.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
+  Intake2.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
+  driveInches(36, 0);
+  
+  indexer.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
+  Flywheel.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
 
  
   
