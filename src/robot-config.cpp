@@ -11,7 +11,7 @@ brain  Brain;
 controller Controller1 = controller(primary);
 motor Left_back = motor(PORT11, ratio18_1, false);
 motor Left_front = motor(PORT2, ratio18_1, false);
-motor Right_back = motor(PORT3, ratio18_1, true);
+motor Right_back = motor(PORT15, ratio18_1, true);
 motor Right_front = motor(PORT13, ratio18_1, true);
 motor Flywheel = motor(PORT9, ratio18_1, false);
 motor Intake1 = motor(PORT14, ratio18_1, false);
