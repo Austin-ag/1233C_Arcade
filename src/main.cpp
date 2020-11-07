@@ -76,6 +76,9 @@ void autonomous(void)
   Intake2.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
   driveInches(36, 0);
   
+
+  Intake1.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
+  Intake2.spin(vex::directionType::fwd, 0, vex::velocityUnits::pct);
   indexer.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
   Flywheel.spin(vex::directionType::fwd, 100, vex::velocityUnits::pct);
 
